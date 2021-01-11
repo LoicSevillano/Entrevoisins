@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greybackground"
+    tools:context=".ui.neighbour_list.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageProfil"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/avatar"
+        android:src="@drawable/ic_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/namegroup"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_rectangle_arrondi"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfil">
+
+        <TextView
+            android:id="@+id/avatarname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_shadow_divider"/>
+
+            <TextView
+                android:id="@+id/adress_text"
+                android:drawableStart="@drawable/ic_baseline_place_24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="12dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="12dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/facebook_text"
+                android:drawableStart="@drawable/ic_baseline_language_24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="12dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutmegroup"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_rectangle_arrondi"
+        app:layout_constraintTop_toBottomOf="@+id/namegroup">
+
+
+        <TextView
+            android:id="@+id/aproposdemoi"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_vertical"
+            android:text="@string/a_propos_de_moi"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textnameimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="244dp"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonaddfavorite"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:background="@drawable/ic_favorite_button"
+        android:contentDescription="@string/bouton_ajouter_aux_favoris"
+        android:src="@drawable/ic_star_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+</android.support.constraint.ConstraintLayout>
