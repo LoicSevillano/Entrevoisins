@@ -64,7 +64,6 @@ public class NeighbourFragment extends Fragment {
         mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(mNeighbours));
     }
 
-
     @Override
     public void onResume() {
         super.onResume();

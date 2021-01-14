@@ -7,23 +7,17 @@ import java.util.Objects;
  */
 public class Neighbour {
 
-    /** Identifier */
+    /**
+     * Attributs
+     */
+
     private long id;
-
-    /** Full name */
     private String name;
-
-    /** Avatar */
     private String avatarUrl;
-
-    /** Adress */
     private String address;
-
-    /** Phone number */
     private String phoneNumber;
-
-    /** About me */
     private String aboutMe;
+    private boolean isFavorite;
 
     /**
      * Constructor
